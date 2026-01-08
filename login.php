@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="card">
-        <h2>Masuk ke Akun</h2>
+        <h2>Wellcome My Daily Jurnal</h2>
 
         <?php if ($error !== ''): ?>
             <div class="error"><?php echo htmlspecialchars($error); ?></div>

@@ -13,5 +13,7 @@
     },
     "prettier.requireConfig": true,
     "prettier.configPath": ".prettierrc"
-    ,"prettier.prettierPath": "node_modules/.bin/prettier"
+    ,
+    "prettier.prettierPath": "node_modules/.bin/prettier",
+    "liveServer.settings.multiRootWorkspaceName": "latihan_php3"
 }

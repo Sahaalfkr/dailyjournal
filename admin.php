@@ -56,12 +56,17 @@ include "koneksi.php";
 						<li class="nav-item">
     					<a class="nav-link" href="admin.php?page=article">Article</a>
 					</li>
+					<li class="nav-item">
+    					<a class="nav-link" href="admin.php?page=gallery">Gallery</a>
+					</li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-danger fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?= htmlspecialchars($_SESSION['username'])?>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                            <li><a class="dropdown-item" href="admin.php?page=profile"><i class="bi bi-person-circle"></i> Profile Saya</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="logout.php"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -81,7 +86,7 @@ include "koneksi.php";
             $page = basename($page);
             
             // Whitelist halaman yang diizinkan
-            $allowed_pages = ['dashboard', 'article'];
+            $allowed_pages = ['dashboard', 'article', 'gallery', 'profile'];
             
             // Tampilkan judul page dengan huruf kapital di awal setiap kata
             $title = ucwords(str_replace(['-','_'], ' ', $page));
